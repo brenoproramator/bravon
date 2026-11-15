@@ -1,0 +1,27 @@
+.sv {
+  display: grid;
+  gap: 0.15em;
+}
+
+.sv__row {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sv__track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.sv__copy {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.sv__row--outline .sv__copy {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: max(1px, 0.022em) currentColor;
+}
